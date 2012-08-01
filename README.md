@@ -15,6 +15,7 @@ Usage:
     - TIP: a single handler can register with multiple events.
 
 Example:
+
     import pyevents
     from <module> import <events_descriptions>
 
@@ -39,6 +40,7 @@ Example:
     - When the time comes, dispatch the event.
 
 Example:
+
     import events
     from <module> import <events_descriptions>
 
