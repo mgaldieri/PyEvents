@@ -15,7 +15,7 @@ Usage:
     - TIP: a single handler can register with multiple events.
 
     Example:
-    import events
+    import pyevents
     from <module> import <events_descriptions>
 
     # the event handler
