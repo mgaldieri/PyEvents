@@ -41,7 +41,7 @@ Example:
 
 Example:
 
-    import events
+    import pyevents
     from <module> import <events_descriptions>
 
     # register all the events described in <events_descriptions>
