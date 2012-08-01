@@ -14,7 +14,7 @@ Usage:
       as a parameter to have access to event specific information.
     - TIP: a single handler can register with multiple events.
 
-    Example:
+Example:
     import pyevents
     from <module> import <events_descriptions>
 
@@ -38,7 +38,7 @@ Usage:
     - Register the event with the event system.
     - When the time comes, dispatch the event.
 
-    Example:
+Example:
     import events
     from <module> import <events_descriptions>
 
@@ -53,4 +53,4 @@ Usage:
 
     events.fire(<events_descriptions>.<SOME_EVENT>, {'info':'some_info'})
 
-That's it! Simple, huh?
+That's it! Simple, huh? Oh, And PyEvents is licensed under the MIT open source license.
