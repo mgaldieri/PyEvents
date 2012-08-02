@@ -55,4 +55,4 @@ Example:
 
     events.fire(<events_descriptions>.<SOME_EVENT>, {'info':'some_info'})
 
-That's it! Simple, huh? Oh, And PyEvents is licensed under the MIT open source license.
+That's it! Simple, huh? Oh, and PyEvents is licensed under the MIT open source license.
