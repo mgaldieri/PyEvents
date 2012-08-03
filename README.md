@@ -14,14 +14,18 @@ Usage:
 Example:
 
     import pyevents
+    # This next step is optional, but if there's a module describing
+    # the events, it makes your job incredibly easier. Otherwise you'll
+    # have to know beforehand the names of the events you're trying
+    # to register with.
     from <module> import <events_descriptions>
 
-    # the event handler
+    # The event handler
     def some_function(info):
         print info[<some_info>]
 
-    # register a function with an event. note the
-    # handler function is registered without the ()
+    # Register a function with an event. Note the
+    # handler function is registered without the ().
     event.add_event_handler(<events_descriptions>.<SOME_EVENT>, some_function)
 
     Now, whenever the event <SOME_EVENT> gets dispatched, the handler
@@ -39,13 +43,13 @@ Example:
     import pyevents
     from <module> import <events_descriptions>
 
-    # register all the events described in <events_descriptions>
+    # Register all the events described in <events_descriptions>.
     for evt in dir(<events_descriptions>):
         # skip __builtin__ names
         if evt[:2] != '__':
             events.add_event(evt)
 
-    (...) later in the code, when a particular state is reached
+    (...) Later in the code, when a particular state is reached
           and you wish to dispatch an event signaling it (...)
 
     events.fire(<events_descriptions>.<SOME_EVENT>, {'info':'some_info'})
