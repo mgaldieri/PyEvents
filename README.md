@@ -5,14 +5,11 @@ PyEvents is a simple, pure python event system that handles events and handlers 
 
 Usage:
 
-1) On the handler side
-    - Import the event module.
-    - If the event you'll be registering with has a helper module or class
-      describing the events, import it too.
-    - Register the handler with the desired event passing the event id along
-      with a reference to the handler. The handler should accept a dictionary
-      as a parameter to have access to event specific information.
-    - TIP: a single handler can register with multiple events.
+1) On the handler side:
+- Import the event module.
+- If the event you'll be registering with has a helper module or class describing the events, import it too.
+- Register the handler with the desired event passing the event id along with a reference to the handler. The handler should accept a dictionary as a parameter to have access to event specific information.
+- TIP: a single handler can register with multiple events.
 
 Example:
 
@@ -31,13 +28,11 @@ Example:
     some_function(info) will be called and some additional info maybe
     passed along in the info dict, depending on the event.
 
-2) On the event side
-    - Import the event module.
-    - OPTIONAL: create a module or class to contain descriptions to the desired
-      events and import it too. This can be just a bunch of string or int
-      variables with descriptive names.
-    - Register the event with the event system.
-    - When the time comes, dispatch the event.
+2) On the event side:
+- Import the event module.
+- OPTIONAL: create a module or class to contain descriptions to the desired events and import it too. This can be just a bunch of string or int variables with descriptive names.
+- Register the event with the event system.
+- When the time comes, dispatch the event.
 
 Example:
 
