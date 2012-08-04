@@ -26,7 +26,7 @@ Example:
 
     # Register a function with an event. Note the
     # handler function is registered without the ().
-    event.add_event_handler(<events_descriptions>.<SOME_EVENT>, some_function)
+    pyevents.add_event_handler(<events_descriptions>.<SOME_EVENT>, some_function)
 
     Now, whenever the event <SOME_EVENT> gets dispatched, the handler
     some_function(info) will be called and some additional info maybe
@@ -47,11 +47,11 @@ Example:
     for evt in dir(<events_descriptions>):
         # skip __builtin__ names
         if evt[:2] != '__':
-            events.add_event(evt)
+            pyevents.add_event(evt)
 
     (...) Later in the code, when a particular state is reached
           and you wish to dispatch an event signaling it (...)
 
-    events.fire(<events_descriptions>.<SOME_EVENT>, {'info':'some_info'})
+    pyevents.fire(<events_descriptions>.<SOME_EVENT>, {'info':'some_info'})
 
 That's it! Simple, huh? Oh, and PyEvents is licensed under the MIT open source license.
